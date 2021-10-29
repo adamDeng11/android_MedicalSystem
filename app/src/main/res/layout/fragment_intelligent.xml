@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3FDFDCDC"
+    android:orientation="vertical" >
+
+    <!-- 底部 -->
+<RelativeLayout
+    android:id="@+id/rel_location"
+    android:layout_width="match_parent"
+    android:layout_alignParentBottom="true"
+    android:layout_height="80dp">
+    <RelativeLayout
+        android:id="@+id/chat_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:paddingBottom="3dp"
+        android:paddingTop="3dp"
+        android:background="#3A4449" >
+
+        <EditText
+            android:id="@+id/chat_input_message"
+            android:layout_width="450dp"
+            android:background="@drawable/search_line"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:gravity="left" />
+        <Button
+            android:id="@+id/chat_send"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/chat_input_message"
+            android:text="发送"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+    </RelativeLayout>
+</RelativeLayout>
+    <!-- 中间 -->
+
+    <ListView
+        android:id="@+id/chat_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/rel_location"
+        android:divider="@null"
+        android:dividerHeight="3dp" >
+    </ListView>
+</RelativeLayout>

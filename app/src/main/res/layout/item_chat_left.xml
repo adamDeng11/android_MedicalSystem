@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:background="#f5f5f5"
+        android:id="@+id/chat_left_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingTop="5dp"
+        android:textSize="14sp"
+        android:text="2015/5/6   12:10:13" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/chat_left_image"
+                android:layout_width="@dimen/imageView_chat"
+                android:layout_height="@dimen/imageView_chat"
+                android:src="@mipmap/left_chat"
+                android:layout_marginRight="@dimen/layoutMargin_10"/>
+
+            <TextView
+                android:id="@+id/chat_left_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:text="医师"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/chat_bg_cloud"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/chat_left_message"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:text="您好。" />
+    </LinearLayout>
+
+</LinearLayout>

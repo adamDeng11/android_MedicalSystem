@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="recycleView_title">15sp</dimen>
+    <dimen name="layoutMargin_10">10dp</dimen>
+    <dimen name="imageView_chat">80dp</dimen>
+</resources>

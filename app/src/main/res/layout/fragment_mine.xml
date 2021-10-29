@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/ic_img" />
+
+
+    <Button
+        android:id="@+id/btn_login"
+        style="@style/BlueSolidButton"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="70dp"
+        android:text="去登录"
+        android:textSize="14sp"
+        android:visibility="gone"
+        tools:visibility="visible" />
+
+
+    <LinearLayout
+        android:id="@+id/ll_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="70dp"
+        android:orientation="vertical">
+
+
+        <Button
+            android:id="@+id/btn_manage_others"
+            style="@style/GreenSolidButton"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:text="管理其他就诊人"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/btn_update_pwd"
+            style="@style/YellowSolidButton"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="20dp"
+            android:text="修改密码"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/btn_logout"
+            style="@style/RedSolidButton"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="20dp"
+            android:text="退出登录"
+            android:textSize="14sp" />
+    </LinearLayout>
+</LinearLayout>
